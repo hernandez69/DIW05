@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Página de inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="login"> <!-- "cuerpo" modificamos la imagen de la columna izquierda para verse en tamaño de telefono -->
+    <div class="container d-flex align-items-center p-3 ajustado">
+        <div class="container bg-white">  
+            <div class="row">  
+                <div class="col-xl bg-login my-5 mx-2">
+                </div>
+                <div class="col py-3 pb-1"> <!-- ajustamos el texto al contenedor para que los espacios no esten descuradrados -->
+                    <h1 class="fw-bold text-center mb-5">Bienvenido</h1>
+                    <form action="./principal.html">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password">                       
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" id="boton" class="btn btn-primary ">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#">Regístrate</a></span><br>
+                        <span><a href="#">Recuperar Password</a></span>
+                    </div>                    
+                    </form>
+                </div> <!--"cuerpo" fin de la modificacion la imagen de la columna izquierda para verse en tamaño de telefono -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
